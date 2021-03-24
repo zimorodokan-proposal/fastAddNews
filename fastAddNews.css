@@ -1,0 +1,821 @@
+:root[data-page-style='']	{
+	--root----background-color: rgb(255, 255, 255);
+	--root----color: rgb(0, 0, 0);
+	--root----font-family: Verdana, Tahoma, Calibri, sans-serif;
+	--root----font-size: 16px;
+	--root----min-width: 320px;
+
+	--body----background-color: rgb(255, 255, 255);
+	--body----border-width: 1px;
+	--body----margin: 0 auto;
+	--body----max-width: 1280px;
+	--body----padding: 0 .5rem;
+
+	--a----color: rgb(0, 0, 0);
+	--a----text-decoration: underline;
+	--a_hover----color: rgb(0, 0, 0);
+	--a_hover----text-decoration: none;
+	--a_focus----color: rgb(0, 0, 0);
+	--a_focus----text-decoration: none;
+
+	--h1----border-color: transparent;
+	--h1----border-style: solid;
+	--h1----border-width: 0;
+	--h1----color: rgb(0, 0, 0);
+	--h1----font-family: Verdana, Tahoma, Calibri, sans-serif;
+	--h1----font-weight: normal;
+	--h1----margin: 1rem auto;
+	--h1----padding: 0;
+	--h1----text-align: center;
+
+	--pageHeader----font-size: 1.5rem;
+
+	--form----background-color: rgb(255, 255, 255);
+	--form----border-color: transparent;
+	--form----border-radius: 0;
+	--form----border-style: solid;
+	--form----border-width: 0;
+	--form----box-shadow: none;
+	--form----margin: 1rem auto;
+	--form----padding: 0;
+	--form----width: auto;
+
+	--form__placeholder----color: rgb(70, 70, 70);
+	--form__placeholder----font-size: .85em;
+	--form__placeholder----opacity: 1;
+	--form__placeholder----text-overflow: ellipsis;
+	--form__placeholder_invalid----color: rgb(182, 0, 0);
+
+	--form__section----margin: 2rem auto;
+
+	--form__twoSectionsContainer----margin____min-width_640px: 2rem -.5rem;
+	--form__twoSectionsContainerSection----margin____min-width_640px: -1rem .5rem;
+
+	--form__sectionHeader----margin: auto;
+	--form__sectionHeader----text-align: center;
+
+	--form__labeledElementContainer----margin: 1rem auto;
+	--form__newsSourceAdditionalDataContainer----margin____min-width_640px: -1rem -.5rem 1rem;
+	--form__newsSourceAdditionalDataLabeledElementContainer----margin____min-width_640px: 1rem .5rem 0;
+	--form__newsSourceAdditionalDataLabeledElementContainer----width____min-width_640px: calc(50% - 1rem);
+
+	--form__label----color: rgb(0, 0, 0);
+	--form__label----cursor: pointer;
+	--form__label----display: block;
+	--form__label----font-size: .85rem;
+	--form__label----font-style: italic;
+	--form__label----font-weight: normal;
+	--form__label----margin: 0 0 .3em;
+
+	--form__inputElement----background-color: rgb(255, 255, 255);
+	--form__inputElement----border-color: rgb(224, 224, 224);
+	--form__inputElement----border-radius: .25em;
+	--form__inputElement----border-width: 1px;
+	--form__inputElement----display: block;
+	--form__inputElement----font-size: 1rem;
+	--form__inputElement----line-height: 2;
+	--form__inputElement----padding: 0 .5em;
+	--form__inputElement----width: 100%;
+	--form__inputElement_valid----border-color: rgb(9, 100, 0);
+	--form__inputElement_valid----box-shadow: none;
+	--form__inputElement_valid----color: rgb(9, 100, 0);
+	--form__inputElement_invalid----border-color: rgb(182, 0, 0);
+	--form__inputElement_invalid----box-shadow: none;
+	--form__inputElement_invalid----color: rgb(182, 0, 0);
+	--form__inputElement_focus----border-color: rgb(0, 0, 0);
+	--form__inputElement_focus----box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+	--form__inputElement_focus----color: rgb(0, 0, 0);
+
+	--form__select----background-color: rgb(255, 255, 255);
+	--form__select----border-color: rgb(224, 224, 224);
+	--form__select----border-radius: .25em;
+	--form__select----border-width: 1px;
+	--form__select----display: block;
+	--form__select----font-size: 1rem;
+	--form__select----height: 2rem;
+	--form__select----line-height: 2;
+	--form__select----padding: 0 .5em;
+	--form__select----width: 100%;
+	--form__select_valid----border-color: rgb(9, 100, 0);
+	--form__select_valid----box-shadow: none;
+	--form__select_valid----color: rgb(9, 100, 0);
+	--form__select_invalid----border-color: rgb(182, 0, 0);
+	--form__select_invalid----box-shadow: none;
+	--form__select_invalid----color: rgb(182, 0, 0);
+	--form__select_focus----border-color: rgb(0, 0, 0);
+	--form__select_focus----box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+	--form__select_focus----color: rgb(0, 0, 0);
+	--form__optionFirstChild----color: rgb(182, 0, 0);
+
+	--form__textarea----background-color: rgb(255, 255, 255);
+	--form__textarea----border-color: rgb(224, 224, 224);
+	--form__textarea----border-radius: .25em;
+	--form__textarea----border-width: 1px;
+	--form__textarea----display: block;
+	--form__textarea----font-size: 1rem;
+	--form__textarea----line-height: 1.5;
+	--form__textarea----padding: .25em .5em;
+	--form__textarea----width: 100%;
+	--form__textarea_valid----border-color: rgb(9, 100, 0);
+	--form__textarea_valid----box-shadow: none;
+	--form__textarea_valid----color: rgb(9, 100, 0);
+	--form__textarea_invalid----border-color: rgb(182, 0, 0);
+	--form__textarea_invalid----box-shadow: none;
+	--form__textarea_invalid----color: rgb(182, 0, 0);
+	--form__textarea_focus----border-color: rgb(0, 0, 0);
+	--form__textarea_focus----box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+	--form__textarea_focus----color: rgb(0, 0, 0);
+
+	--form__buttonsContainer----align-items: center;
+	--form__buttonsContainer----display: flex;
+	--form__buttonsContainer----justify-content: center;
+	--form__buttonsContainer----margin: -1rem auto;
+
+	--form__button----border-radius: .5em;
+	--form__button----cursor: pointer;
+	--form__button----display: block;
+	--form__button----font-size: 1rem;
+	--form__button----font-weight: normal;
+	--form__button----line-height: 1.5;
+	--form__button----margin: 1rem auto;
+	--form__button----min-width: 64px;
+	--form__button----padding: .5em 1.5em;
+	--form__button----text-align: center;
+	--form__button----text-decoration: none;
+	--form__button----width: 100%;
+
+	--form__button--saveAndEdit----background-color: rgb(10, 102, 0);
+	--form__button--saveAndEdit----border-color: transparent;
+	--form__button--saveAndEdit----border-width: 0;
+	--form__button--saveAndEdit----box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+	--form__button--saveAndEdit----color: rgb(255, 255, 255);
+	--form__button--saveAndEdit_hover----background-color: rgb(17, 202, 0);
+	--form__button--saveAndEdit_hover----border-color: transparent;
+	--form__button--saveAndEdit_hover----border-width: 0;
+	--form__button--saveAndEdit_hover----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--saveAndEdit_hover----color: rgb(255, 255, 255);
+	--form__button--saveAndEdit_focus----background-color: rgb(17, 202, 0);
+	--form__button--saveAndEdit_focus----border-color: transparent;
+	--form__button--saveAndEdit_focus----border-width: 0;
+	--form__button--saveAndEdit_focus----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--saveAndEdit_focus----color: rgb(255, 255, 255);
+
+	--form__button--saveAndReview----background-color: rgb(0, 65, 161);
+	--form__button--saveAndReview----border-color: transparent;
+	--form__button--saveAndReview----border-width: 0;
+	--form__button--saveAndReview----box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+	--form__button--saveAndReview----color: rgb(255, 255, 255);
+	--form__button--saveAndReview_hover----background-color: rgb(0, 101, 252);
+	--form__button--saveAndReview_hover----border-color: transparent;
+	--form__button--saveAndReview_hover----border-width: 0;
+	--form__button--saveAndReview_hover----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--saveAndReview_hover----color: rgb(255, 255, 255);
+	--form__button--saveAndReview_focus----background-color: rgb(0, 101, 252);
+	--form__button--saveAndReview_focus----border-color: transparent;
+	--form__button--saveAndReview_focus----border-width: 0;
+	--form__button--saveAndReview_focus----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--saveAndReview_focus----color: rgb(255, 255, 255);
+
+	--form__button--cancel----background-color: rgb(255, 255, 255);
+	--form__button--cancel----border-color: transparent;
+	--form__button--cancel----border-width: 0;
+	--form__button--cancel----box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+	--form__button--cancel----color: rgb(218, 36, 25);
+	--form__button--cancel_hover----background-color: rgb(244, 244, 244);
+	--form__button--cancel_hover----border-color: transparent;
+	--form__button--cancel_hover----border-width: 0;
+	--form__button--cancel_hover----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--cancel_hover----color: rgb(218, 36, 25);
+	--form__button--cancel_focus----background-color: rgb(244, 244, 244);
+	--form__button--cancel_focus----border-color: transparent;
+	--form__button--cancel_focus----border-width: 0;
+	--form__button--cancel_focus----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--cancel_focus----color: rgb(218, 36, 25);
+
+	--form__summary_focus----color: rgb(0, 0, 0);
+	--form__summary_focus----text-decoration: underline;
+}
+:root[data-page-style='default-wiki']	{
+	--root----background-color: rgb(246, 246, 246);
+	--root----font-family: sans-serif;
+	--root----font-size: 14px;
+
+	--body----background-color: rgb(246, 246, 246);
+
+	--a----color: rgb(6, 69, 173);
+	--a----text-decoration: none;
+	--a_hover----color: rgb(6, 69, 173);
+	--a_hover----text-decoration: underline;
+	--a_focus----color: rgb(6, 69, 173);
+	--a_focus----text-decoration: underline;
+
+	--h1----border-color: rgb(162, 169, 177);
+	--h1----border-width: 0 0 1px 0;
+	--h1----font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+	--h1----font-weight: 400;
+	--h1----padding: 0;
+	--h1----text-align: start;
+
+	--pageHeader----font-size: 2rem;
+
+	--form----background-color: rgb(234, 236, 240);
+	--form----border-color: rgb(200, 204, 209);
+	--form----border-radius: 2px;
+	--form----border-width: 1px;
+	--form----padding: 0 .5rem;
+
+	--form__placeholder----font-size: 1rem;
+
+	--form__section----margin: 1rem auto;
+
+	--form__twoSectionsContainer----margin____min-width_640px: 1rem -.5rem;
+	--form__twoSectionsContainerSection----margin____min-width_640px: -.5rem .5rem;
+
+	--form__labeledElementContainer----margin: .5rem auto;
+	--form__newsSourceAdditionalDataContainer----margin____min-width_640px: -.5rem -.5rem 1rem;
+	--form__newsSourceAdditionalDataLabeledElementContainer----margin____min-width_640px: .5rem .5rem 0;
+
+	--form__label----font-size: 13px;
+	--form__label----margin: 0 0 4px;
+
+	--form__inputElement_valid----border-color: rgb(114, 119, 125);
+	--form__inputElement_focus----border-color: rgb(51, 102, 204);
+	--form__inputElement_focus----box-shadow: inset 0 0 0 1px rgb(51, 102, 204);
+	--form__inputElement_focus----color: rgb(0, 80, 199);
+
+	--form__select_valid----border-color: rgb(114, 119, 125);
+	--form__select_focus----border-color: rgb(51, 102, 204);
+	--form__select_focus----box-shadow: inset 0 0 0 1px rgb(51, 102, 204);
+	--form__select_focus----color: rgb(0, 80, 199);
+
+	--form__textarea_valid----border-color: rgb(114, 119, 125);
+	--form__textarea_focus----border-color: rgb(51, 102, 204);
+	--form__textarea_focus----box-shadow: inset 0 0 0 1px rgb(51, 102, 204);
+	--form__textarea_focus----color: rgb(0, 80, 199);
+
+	--form__button----border-radius: 2px;
+	--form__button----font-weight: bold;
+
+	--form__button--saveAndEdit----background-color: rgb(248, 249, 250);
+	--form__button--saveAndEdit----border-color: rgb(162, 169, 177);
+	--form__button--saveAndEdit----border-width: 1px;
+	--form__button--saveAndEdit----box-shadow: unset;
+	--form__button--saveAndEdit----color: rgb(32, 33, 34);
+	--form__button--saveAndEdit_hover----background-color: rgb(255, 255, 255);
+	--form__button--saveAndEdit_hover----border-color: rgb(162, 169, 177);
+	--form__button--saveAndEdit_hover----border-width: 1px;
+	--form__button--saveAndEdit_hover----box-shadow: unset;
+	--form__button--saveAndEdit_hover----color: rgb(64, 66, 68);
+	--form__button--saveAndEdit_focus----background-color: rgb(248, 249, 250);
+	--form__button--saveAndEdit_focus----border-color: rgb(51, 102, 204);
+	--form__button--saveAndEdit_focus----border-width: 1px;
+	--form__button--saveAndEdit_focus----box-shadow: rgb(51, 102, 204) 0px 0px 0px 1px inset;
+	--form__button--saveAndEdit_focus----color: rgb(32, 33, 34);
+
+	--form__button--saveAndReview----background-color: rgb(51, 102, 204);
+	--form__button--saveAndReview----border-color: rgb(51, 102, 204);
+	--form__button--saveAndReview----border-width: 1px;
+	--form__button--saveAndReview----box-shadow: unset;
+	--form__button--saveAndReview----color: rgb(255, 255, 255);
+	--form__button--saveAndReview_hover----background-color: rgb(68, 127, 245);
+	--form__button--saveAndReview_hover----border-color: rgb(68, 127, 245);
+	--form__button--saveAndReview_hover----border-width: 1px;
+	--form__button--saveAndReview_hover----box-shadow: unset;
+	--form__button--saveAndReview_hover----color: rgb(255, 255, 255);
+	--form__button--saveAndReview_focus----background-color: rgb(51, 102, 204);
+	--form__button--saveAndReview_focus----border-color: rgb(51, 102, 204);
+	--form__button--saveAndReview_focus----border-width: 1px;
+	--form__button--saveAndReview_focus----box-shadow: inset 0 0 0 1px rgb(51, 102, 204),inset 0 0 0 2px rgb(255, 255, 255);
+	--form__button--saveAndReview_focus----color: rgb(255, 255, 255);
+
+	--form__button--cancel----background-color: rgb(255, 255, 255);
+	--form__button--cancel----border-color: transparent;
+	--form__button--cancel----border-width: 0;
+	--form__button--cancel----box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+	--form__button--cancel----color: rgb(218, 36, 25);
+	--form__button--cancel_hover----background-color: rgb(244, 244, 244);
+	--form__button--cancel_hover----border-color: transparent;
+	--form__button--cancel_hover----border-width: 0;
+	--form__button--cancel_hover----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--cancel_hover----color: rgb(218, 36, 25);
+	--form__button--cancel_focus----background-color: rgb(244, 244, 244);
+	--form__button--cancel_focus----border-color: transparent;
+	--form__button--cancel_focus----border-width: 0;
+	--form__button--cancel_focus----box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .2);
+	--form__button--cancel_focus----color: rgb(218, 36, 25);
+
+	--form__summary_focus----color: rgb(6, 69, 173);
+}
+:root[data-page-style='default-green']	{
+	--a----color: rgb(0, 100, 14);
+	--a----text-decoration: none;
+	--a_hover----color: rgb(0, 100, 14);
+	--a_hover----text-decoration: underline;
+	--a_focus----color: rgb(0, 100, 14);
+	--a_focus----text-decoration: underline;
+
+	--h1----color: rgb(15, 102, 7);
+	--h1----font-weight: 400;
+
+	--form----background-color: rgb(240, 255, 240);
+	--form----border-color: rgb(15, 102, 7);
+	--form----border-radius: .5rem;
+	--form----border-width: 2px;
+	--form----box-shadow: 0 0 .25rem;
+	--form----padding: 0 .5rem;
+
+	--form__inputElement_focus----border-color: rgb(15, 102, 7);
+	--form__inputElement_focus----box-shadow: inset 0 0 0 1px rgb(15, 102, 7);
+	--form__inputElement_focus----color: rgb(15, 102, 7);
+
+	--form__select_focus----border-color: rgb(15, 102, 7);
+	--form__select_focus----box-shadow: inset 0 0 0 1px rgb(15, 102, 7);
+	--form__select_focus----color: rgb(15, 102, 7);
+
+	--form__textarea_focus----border-color: rgb(15, 102, 7);
+	--form__textarea_focus----box-shadow: inset 0 0 0 1px rgb(15, 102, 7);
+	--form__textarea_focus----color: rgb(15, 102, 7);
+
+	--form__button--saveAndEdit_hover----background-color: rgb(10, 68, 4);
+	--form__button--saveAndEdit_focus----background-color: rgb(10, 68, 4);
+
+	--form__button--saveAndReview----background-color: rgb(255, 255, 255);
+	--form__button--saveAndReview----color: rgb(15, 102, 7);
+	--form__button--saveAndReview_hover----background-color: rgb(180, 255, 180);
+	--form__button--saveAndReview_hover----color: rgb(14, 90, 7);
+	--form__button--saveAndReview_focus----background-color: rgb(244, 255, 244);
+	--form__button--saveAndReview_focus----color: rgb(14, 90, 7);
+
+	--form__summary_focus----color: rgb(0, 100, 14);
+}
+:root[data-page-style='default-blue']	{
+	--a----color: rgb(0, 80, 199);
+	--a----text-decoration: none;
+	--a_hover----color: rgb(0, 80, 199);
+	--a_hover----text-decoration: underline;
+	--a_focus----color: rgb(0, 80, 199);
+	--a_focus----text-decoration: underline;
+
+	--h1----color: rgb(7, 45, 102);
+	--h1----font-weight: 400;
+
+	--form----background-color: rgb(219 237 255);
+	--form----border-radius: .5rem;
+	--form----border-width: 1px;
+	--form----padding: 0 .5rem;
+
+	--form__inputElement_valid----border-color: rgb(0, 80, 199);
+	--form__inputElement_valid----color: rgb(0, 80, 199);
+
+	--form__select_valid----border-color: rgb(0, 80, 199);
+	--form__select_valid----color: rgb(0, 80, 199);
+
+	--form__textarea_valid----border-color: rgb(0, 80, 199);
+	--form__textarea_valid----color: rgb(0, 80, 199);
+
+	--form__button--saveAndEdit----background-color: rgb(255, 255, 255);
+	--form__button--saveAndEdit----color: rgb(0, 80, 199);
+	--form__button--saveAndEdit_hover----background-color: rgb(0, 101, 252);
+	--form__button--saveAndEdit_hover----color: rgb(255, 255, 255);
+	--form__button--saveAndEdit_focus----background-color: rgb(0, 101, 252);
+	--form__button--saveAndEdit_focus----color: rgb(255, 255, 255);
+
+	--form__summary_focus----color: rgb(0, 80, 199);
+}
+*,
+*::before,
+*::after	{
+	background-clip: padding-box;
+	background-color: transparent;
+	background-image: none;
+	border-collapse: collapse;
+	border-color: transparent;
+	border-image-width: 0;
+	border-style: solid;
+	border-width: 0;
+	box-sizing: border-box;
+	color: #000;
+	font-family: Verdana, Tahoma, Calibri, sans-serif;
+	/* outline: 0 solid transparent; */
+	overflow-wrap: anywhere;
+	text-transform: none;
+	word-wrap: anywhere;
+}
+:root	{
+	background-color: var(--root----background-color, rgb(255, 255, 255));
+	color: var(--root----color, rgb(0, 0, 0));
+	font-family: var(--root----font-family, Verdana, Tahoma, Calibri, sans-serif);
+	font-size: var(--root----font-size, 16px);
+	min-width: var(--root----min-width, 320px);
+}
+body	{
+	background-color: var(--body----background-color, rgb(255, 255, 255) );
+	border-width: var(--body----border-width, 1px);
+	margin: var(--body----margin, 0 auto);
+	max-width: var(--body----max-width, 1280px);
+	padding: var(--body----padding, 0 .5rem);
+}
+a	{
+	color: var(--a----color, rgb(0, 0, 0));
+	text-decoration: var(--a----text-decoration, underline);
+}
+a:hover	{
+	color: var(--a_hover----color, rgb(0, 0, 0));
+	text-decoration: var(--a_hover----text-decoration, none);
+}
+a:focus	{
+	color: var(--a_focus----color, rgb(0, 0, 0));
+	text-decoration: var(--a_focus----text-decoration, none);
+}
+h1	{
+	border-color: var(--h1----border-color, transparent);
+	border-style: var(--h1----border-style, solid);
+	border-width: var(--h1----border-width, 0);
+	color: var(--h1----color, rgb(0, 0, 0));
+	font-family: var(--h1----font-family, Verdana, Tahoma, Calibri, sans-serif);
+	font-weight: var(--h1----font-weight, normal);
+	margin: var(--h1----margin, 1rem auto);
+	padding: var(--h1----padding, 0);
+	text-align: var(--h1----text-align, center);
+}
+.pageHeader	{
+	font-size: var(--pageHeader----font-size, 1.5rem);
+}
+.form	{
+	background-color: var(--form----background-color, rgb(255, 255, 255));
+	border-color: var(--form----border-color, transparent);
+	border-radius: var(--form----border-radius, 0);
+	border-style: var(--form----border-style, solid);
+	border-width: var(--form----border-width, 0);
+	box-shadow: var(--form----box-shadow, none);
+	margin: var(--form----margin, 1rem auto);
+	padding: var(--form----padding, 0);
+	width: var(--form----width, auto);
+}
+::placeholder {
+	color: var(--form__placeholder----color, rgb(70, 70, 70));
+	font-size: var(--form__placeholder----font-size, .85em);
+	opacity: var(--form__placeholder----opacity, 1);
+	text-overflow: var(--form__placeholder----text-overflow, ellipsis);
+}
+:invalid::placeholder {
+	color: var(--form__placeholder_invalid----color, rgb(182, 0, 0));
+}
+.form__section	{
+	margin: var(--form__section----margin, 2rem auto);
+}
+.form__sectionHeader	{
+	margin: var(--form__sectionHeader----margin, auto);
+	text-align: var(--form__sectionHeader----text-align, center);
+}
+.form__labeledElementContainer	{
+	margin: var(--form__labeledElementContainer----margin, 1rem auto);
+}
+.form__label	{
+	color: var(--form__label----color, rgb(0, 0, 0));
+	cursor: var(--form__label----cursor, pointer);
+	display: var(--form__label----display, block);
+	font-size: var(--form__label----font-size, .85rem);
+	font-style: var(--form__label----font-style, italic);
+	font-weight: var(--form__label----font-weight, normal);
+	margin: var(--form__label----margin, 0 0 .3em);
+}
+.form__inputDate,
+.form__inputText,
+.form__inputUrl	{
+	background-color: var(--form__inputElement----background-color, rgb(255, 255, 255));
+	border-color: var(--form__inputElement----border-color, rgb(224, 224, 224));
+	border-radius: var(--form__inputElement----border-radius, .25em);
+	border-width: var(--form__inputElement----border-width, 1px);
+	display: var(--form__inputElement----display, block);
+	font-size: var(--form__inputElement----font-size, 1rem);
+	line-height: var(--form__inputElement----line-height, 2);
+	padding: var(--form__inputElement----padding, 0 .5em);
+	width: var(--form__inputElement----width, 100%);
+}
+.form__inputDate:valid,
+.form__inputText:valid,
+.form__inputUrl:valid	{
+	border-color: var(--form__inputElement_valid----border-color, rgb(9, 100, 0));
+	box-shadow: var(--form__inputElement_valid----border-shadow, none);
+	color: var(--form__inputElement_valid----color, rgb(9, 100, 0));
+}
+.form__inputDate:invalid,
+.form__inputText:invalid,
+.form__inputUrl:invalid	{
+	border-color: var(--form__inputElement_invalid----border-color, rgb(182, 0, 0));
+	box-shadow: var(--form__inputElement_invalid----border-shadow, none);
+	color: var(--form__inputElement_invalid----color, rgb(182, 0, 0));
+}
+.form__inputDate:focus,
+.form__inputText:focus,
+.form__inputUrl:focus	{
+	border-color: var(--form__inputElement_focus----border-color, rgb(0, 0, 0));
+	box-shadow: var(--form__inputElement_focus----box-shadow, inset 0 0 0 1px rgb(0, 0, 0));
+	color: var(--form__inputElement_focus----color, rgb(0, 0, 0));
+}
+.form__select	{
+	background-color: var(--form__select----background-color, rgb(255, 255, 255));
+	border-color: var(--form__select----border-color, rgb(224, 224, 224));
+	border-radius: var(--form__select----border-radius, .25em);
+	border-width: var(--form__select----border-width, 1px);
+	display: var(--form__select----display, block);
+	font-size: var(--form__select----font-size, 1rem);
+	height: var(--form__select---height, 2rem);
+	line-height: var(--form__select----line-height, 2);
+	padding: var(--form__select----padding, 0 .5em);
+	width: var(--form__select----width, 100%);
+}
+.form__select:valid	{
+	border-color: var(--form__select_valid----border-color, rgb(9, 100, 0));
+	box-shadow: var(--form__select_valid----box-shadow, none);
+	color: var(--form__select_valid----color, rgb(9, 100, 0));
+}
+.form__select:invalid	{
+	border-color: var(--form__select_invalid----border-color, rgb(182, 0, 0));
+	box-shadow: var(--form__select_invalid----box-shadow, none);
+	color: var(--form__select_invalid----color, rgb(182, 0, 0));
+}
+.form__select:focus	{
+	border-color: var(--form__select_focus----border-color, rgb(0, 0, 0));
+	box-shadow: var(--form__select_focus----box-shadow, inset 0 0 0 1px rgb(0, 0, 0));
+	color: var(--form__select_focus----color, rgb(0, 0, 0));
+}
+.form__optionFirstChild	{
+	color: var(--form__optionFirstChild----color, rgb(182, 0, 0));
+}
+.form__textarea	{
+	background-color: var(--form__textarea----background-color, rgb(255, 255, 255));
+	border-color: var(--form__textarea----border-color, rgb(224, 224, 224));
+	border-radius: var(--form__textarea----border-radius, .25em);
+	border-width: var(--form__textarea----border-width, 1px);
+	display: var(--form__textarea----display, block);
+	font-size: var(--form__textarea----font-size, 1rem);
+	line-height: var(--form__textarea----line-height, 1.5);
+	padding: var(--form__textarea----padding, .25em .5em);
+	width: var(--form__textarea----width, 100%);
+}
+.form__textarea:valid	{
+	border-color: var(--form__textarea_valid----border-color, rgb(9, 100, 0));
+	box-shadow: var(--form__textarea_valid----border-shadow, none);
+	color: var(--form__textarea_valid----color, rgb(9, 100, 0));
+}
+.form__textarea:invalid	{
+	border-color: var(--form__textarea_invalid----border-color, rgb(182, 0, 0));
+	box-shadow: var(--form__textarea_invalid----border-shadow, none);
+	color: var(--form__textarea_invalid----color, rgb(182, 0, 0));
+}
+.form__textarea:focus	{
+	border-color: var(--form__textarea_focus----border-color, rgb(0, 0, 0));
+	box-shadow: var(--form__textarea_focus----box-shadow, inset 0 0 0 1px rgb(0, 0, 0));
+	color: var(--form__textarea_focus----color, rgb(0, 0, 0));
+}
+.form__buttonsContainer	{
+	align-items: var(--form__buttonsContainer----align-items, center);
+	display: var(--form__buttonsContainer----display, flex);
+	justify-content: var(--form__buttonsContainer----justify-content, center);
+	margin: var(--form__buttonsContainer----margin, -1rem auto);
+}
+.form__button	{
+	border-radius: var(--form__button----border-radius, .5em);
+	cursor: var(--form__button----cursor, pointer);
+	display: var(--form__button----display, block);
+	font-size: var(--form__button----font-size, 1rem);
+	font-weight: var(--form__button----font-weight, normal);
+	line-height: var(--form__button----line-height, 1.5);
+	margin: var(--form__button----margin, 1rem auto);
+	min-width: var(--form__button----min-width, 64px);
+	padding: var(--form__button----padding, .5em 1.5em);
+	text-align: var(--form__button----text-align, center);
+	text-decoration: var(--form__button----text-decoration, none);
+	width: var(--form__button----width, 100%);
+}
+.form__button--saveAndEdit	{
+	background-color: var(--form__button--saveAndEdit----background-color, rgb(10, 102, 0));
+	border-color: var(--form__button--saveAndEdit----border-color, transparent);
+	border-width: var(--form__button--saveAndEdit----border-width, 0);
+	box-shadow: var(--form__button--saveAndEdit----box-shadow, 0 2px 5px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--saveAndEdit----color, rgb(255, 255, 255));
+}
+.form__button--saveAndEdit:hover	{
+	background-color: var(--form__button--saveAndEdit_hover----background-color, rgb(17, 202, 0));
+	border-color: var(--form__button--saveAndEdit_hover----border-color, transparent);
+	border-width: var(--form__button--saveAndEdit_hover----border-width, 0);
+	box-shadow: var(--form__button--saveAndEdit_hover----box-shadow, 0 5px 12px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--saveAndEdit_hover----color, rgb(255, 255, 255));
+}
+.form__button--saveAndEdit:focus	{
+	background-color: var(--form__button--saveAndEdit_focus----background-color, rgb(17, 202, 0));
+	border-color: var(--form__button--saveAndEdit_focus----border-color, transparent);
+	border-width: var(--form__button--saveAndEdit_focus----border-width, 0);
+	box-shadow: var(--form__button--saveAndEdit_focus----box-shadow, 0 5px 12px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--saveAndEdit_focus----color, rgb(255, 255, 255));
+}
+.form__button--saveAndReview	{
+	background-color: var(--form__button--saveAndReview----background-color, rgb(0, 65, 161));
+	border-color: var(--form__button--saveAndReview----border-color, transparent);
+	border-width: var(--form__button--saveAndReview----border-width, 0);
+	box-shadow: var(--form__button--saveAndReview----box-shadow, 0 2px 5px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--saveAndReview----color, rgb(255, 255, 255));
+}
+.form__button--saveAndReview:hover	{
+	background-color: var(--form__button--saveAndReview_hover----background-color, rgb(0, 101, 252));
+	border-color: var(--form__button--saveAndReview_hover----border-color, transparent);
+	border-width: var(--form__button--saveAndReview_hover----border-width, 0);
+	box-shadow: var(--form__button--saveAndReview_hover----box-shadow, 0 5px 12px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--saveAndReview_hover----color, rgb(255, 255, 255));
+}
+.form__button--saveAndReview:focus	{
+	background-color: var(--form__button--saveAndReview_focus----background-color, rgb(0, 101, 252));
+	border-color: var(--form__button--saveAndReview_focus----border-color, transparent);
+	border-width: var(--form__button--saveAndReview_focus----border-width, 0);
+	box-shadow: var(--form__button--saveAndReview_focus----box-shadow, 0 5px 12px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--saveAndReview_focus----color, rgb(255, 255, 255));
+}
+.form__button--cancel	{
+	background-color: var(--form__button--cancel----background-color, rgb(255, 255, 255));
+	border-color: var(--form__button--cancel----border-color, transparent);
+	border-width: var(--form__button--cancel----border-width, 0);
+	box-shadow: var(--form__button--cancel----box-shadow, 0 2px 5px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--cancel----color, rgb(218, 36, 25));
+}
+.form__button--cancel:hover	{
+	background-color: var(--form__button--cancel_hover----background-color, rgb(244, 244, 244));
+	border-color: var(--form__button--cancel_hover----border-color, transparent);
+	border-width: var(--form__button--cancel_hover----border-width, 0);
+	box-shadow: var(--form__button--cancel_hover----box-shadow, 0 5px 12px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--cancel_hover----color, rgb(218, 36, 25));
+}
+.form__button--cancel:focus	{
+	background-color: var(--form__button--cancel_focus----background-color, rgb(244, 244, 244));
+	border-color: var(--form__button--cancel_focus----border-color, transparent);
+	border-width: var(--form__button--cancel_focus----border-width, 0);
+	box-shadow: var(--form__button--cancel_focus----box-shadow, 0 5px 12px 0 rgba(0, 0, 0, .2));
+	color: var(--form__button--cancel_focus----color, rgb(218, 36, 25));
+}
+.form__summary	{
+	cursor: pointer;
+}
+.form__summary:focus	{
+	color: var(--form__summary_focus----color, rgb(0, 0, 0));
+	text-decoration: var(--form__summary_focus----text-decoration, underline);
+}
+.layer	{
+	bottom: 0;
+	display: none;
+	left: 0;
+	margin: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 200;
+}
+.layer--open	{
+	display: block;
+}
+.layer--shadow	{
+	background-color: rgba(0, 0, 0, .5);
+	cursor: pointer;
+}
+.layer__content	{
+	background-color: rgb(255, 255, 255);
+	bottom: 0;
+	cursor: default;
+	hyphens: auto;
+	left: 0;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 600px;
+	overflow: auto;
+	padding: 0 16px;
+	position: fixed;
+	right: 0;
+	text-align: justify;
+	top: 0;
+}
+.layer__closeInterface	{
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(224, 224, 224);
+	border-width: 0 0 1px 0;
+	left: 0;
+	margin: auto;
+	max-width: 600px;
+	position: fixed;
+	right: 0;
+	text-align: right;
+	top: 0;
+	z-index: 2;
+}
+.layer__closeElement:hover	{
+	color: rgb(218, 36, 25);
+}
+.layer__closeElement:focus	{
+	color: rgb(218, 36, 25);
+}
+.layer__closeElement	{
+	cursor: pointer;
+	display: inline-block;
+	font-size: 32px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	width: 48px;
+}
+.layer--closeInterface .layer__content	{
+	top: 49px;
+}
+.layer--closeInterface .layer__closeInterface	{
+	display: block;
+}
+:root:not([data-storage]) [data-layer-id='layerSettings']	{
+	display: none;
+}
+.standardText	{
+	line-height: 1.5;
+}
+.standardText section	{
+	margin: 1.5em auto 0;
+}
+.standardText div,
+.standardText li,
+.standardText ol,
+.standardText ul,
+.standardText p	{
+	margin: 1em auto;
+}
+.pageThemes__listItem	{
+	cursor: pointer;
+	list-style-type: circle;
+}
+.pageThemes__listItem:hover	{
+	text-decoration: underline;
+}
+.pageThemes__listItem:focus	{
+	text-decoration: underline;
+}
+[data-page-style=""] [data-page-style=""],
+[data-page-style="default-wiki"] [data-page-style="default-wiki"],
+[data-page-style="default-blue"] [data-page-style="default-blue"],
+[data-page-style="default-green"] [data-page-style="default-green"]	{
+	font-weight: bold;
+}
+.footer	{
+	border-color: rgb(224, 224, 224);
+	border-width: 1px 0 0;
+	margin: 1rem auto 0;
+	padding: .5rem 0;
+	text-align: center;
+}
+.footer__link	{
+	color: var(--a----color, rgb(0, 0, 0));
+	text-decoration: var(--a----text-decoration, underline);
+	cursor: pointer;
+	display: inline-block;
+	line-height: 2rem;
+	margin: 0 1rem;
+}
+.footer__link:hover	{
+	color: var(--a_hover----color, rgb(0, 0, 0));
+	text-decoration: var(--a_hover----text-decoration, none);
+}
+.footer__link:focus	{
+	color: var(--a_focus----color, rgb(0, 0, 0));
+	text-decoration: var(--a_focus----text-decoration, none);
+}
+@media (min-width: 640px)	{
+	.form__twoSectionsContainer	{
+		align-content: stretch;
+		display: flex;
+		justify-content: space-between;
+		margin: var(--form__twoSectionsContainer----margin____min-width_640px, 2rem-.5rem);
+	}
+	.form__twoSectionsContainerSection 	{
+		flex: none;
+		margin: var(--form__twoSectionsContainerSection----margin____min-width_640px, -1rem .5rem);
+		width: calc(50% - 1rem);
+	}
+	.form__labeledElementContainer--variableLabelPosition	{
+		align-items: center;
+		display: flex;
+	}
+	.form__labeledElementContainer--variableLabelPosition .form__label	{
+		flex: none;
+		margin: 0 8px 0 0;
+	}
+	.form__newsSourceAdditionalDataContainer	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: var(--form__newsSourceAdditionalDataContainer----margin____min-width_640px, -1rem -.5rem 1rem);
+	}
+	.form__newsSourceAdditionalDataLabeledElementContainer	{
+		margin: var(--form__newsSourceAdditionalDataLabeledElementContainer----margin____min-width_640px, 1rem .5rem 0);
+		width: calc(50% - 1rem);
+	}
+}
+@media (min-width: 1024px)	{
+	.form__newsSourceAdditionalDataLabeledElementContainer	{
+		width: calc(100% / 3 - 1rem);
+	}
+}
